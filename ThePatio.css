@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.navBarHome {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    max-height: 44px;
+    min-height: 40px;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.navBar {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+    max-height: 44px;
+    min-height: 40px;
+    border-spacing: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.logoButton {
+    width: 11%;
+    padding: 0;
+    max-height: 44px;
+    min-height: 40px;
+    opacity: 0.8;
+}
+
+.logoButton:hover {
+    opacity: 1;
+}
+
+.navbuffer {
+    width: 11.5%;
+}
+
+.tabAddress {
+    color: white;
+    text-decoration: none;
+}
+
+#logo line:nth-child(3) {
+    stroke-dasharray: 14;
+    stroke-dashoffset: 14;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo line:nth-child(4) {
+    stroke-dasharray: 14;
+    stroke-dashoffset: 14;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo line:nth-child(5) {
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+    animation: line-anim 2s ease forwards;
+}
+
+#logo line:nth-child(6) {
+    stroke-dasharray: 35;
+    stroke-dashoffset: 35;
+    animation: line-anim 2s ease forwards;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.container {
+    text-align: center;
+    overflow: hidden;
+}
+
+.contentPhoto {
+    width: 100%;
+}
+
+.textMiddle {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introHeader {
+    font-size: 80px;
+    line-height: 1.05;
+    font-weight: 600;
+    letter-spacing: -.015em;
+    text-align: center;
+    color: #333;
+}
+
+.intro {
+    font-size: 24px;
+    line-height: 1.33349;
+    font-weight: 400;
+    letter-spacing: .009em;
+    color: #333;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 20px;
+}
+
+.shopLink {
+    text-align: center;
+    color: #333;
+    text-decoration-line: none;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255, 0);
+    border: 1px solid #333;
+    border-radius: 50px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    transition: background-color 0.4s linear;
+}
+
+.shopLink:hover {
+    transition: background-color 0.4s linear;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    background: #0071e3;
+    cursor: pointer;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.33349;
+    font-weight: 400;
+    letter-spacing: .009em;
+    border: none;
+    line-height: 1.17648;
+    min-width: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 18px;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.links {
+    text-decoration: none;
+    color: #06c;
+    cursor: auto;
+    padding-left: .3em;
+    top: 0;
+    line-height: 1;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    margin-top: .65em;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
+
+.homepageimg {
+    width: 100%;
+}
+
+.storefrontimg {
+    width: 100%
+}
+
+.storeimgcell {
+    width: 30%;
+}
+
+.storeName {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.storeDetailsTitle {
+    font-size: 21px;
+    line-height: 1.19048;
+    font-weight: 600;
+    letter-spacing: .011em;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.storeDetails {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.storeLocation {
+    font-size: 14px;
+    line-height: 1.42859;
+    font-weight: 400;
+    letter-spacing: -.016em;
+    text-align: center;
+    color: #06c;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.storeLocation:hover {
+    text-decoration: underline;
+}
+
+.contactTable {
+    padding: 100px;
+}
+
+.bottomBar {
+    padding-top: 20px;
+    text-align: center;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: small;
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.logobottom {
+    top: 50%;
+    left: 50%;
+}
+
+.bottomLine {
+    width: 30%;
+    border: 1px solid;
+    border-color: rgba(211, 211, 211, 0.8);
+    margin: auto;
+}
+
+#cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#loginScreen {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 480px;
+    width: 640px;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 10;
+    display: none;
+    background-color: white;
+    border-radius: 18px;
+}
+
+#loginScreen:target,
+#loginScreen:target+#cover {
+    display: block;
+    opacity: 2;
+}
+
+.map {
+    padding: 20px;
+}
+
+.mapTitle {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #1d1d1f;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.cancel {
+    display: block;
+    position: absolute;
+    top: 3px;
+    right: 2px;
+    color: rgba(134, 134, 139, .8);
+    height: 30px;
+    width: 35px;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.rangeTable {
+    background-color: rgba(245, 245, 247, 0.6);
+    width: 100%;
+}
+
+.brandName {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: #1d1d1f;
+    text-align: center;
+}
+
+.brandName:hover {
+    color: #2997ff;
+}
+
+.brandCell {
+    width: 15%;
+    cursor: pointer;
+    height: 60px;
+}
+
+.centerBrand {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.productHeader {
+    color: white;
+    font-size: 56px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -.005em;
+}
+
+.productDescription {
+    font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+    letter-spacing: .009em;
+    color: white;
+}
+
+.price {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    color: white;
+}
+
+.weberMiddle {
+    position: absolute;
+    top: 45%;
+    left: 12.5%;
+}
+
+.weberLink {
+    color: white;
+    text-decoration-line: none;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: #0071e3;
+    border-radius: 50px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -.022em;
+}
+
+.weberLink:hover {
+    background-color: #06c;
+    text-decoration: none;
+}
+
+.links {
+    text-decoration: none;
+    color: #06c;
+    cursor: pointer;
+    padding-left: .3em;
+    top: 0;
+    line-height: 1;
+    font-size: 21px;
+    line-height: 1.381;
+    font-weight: 400;
+    margin-top: .65em;
+}
+
+.links:hover {
+    text-decoration: underline;
+}
